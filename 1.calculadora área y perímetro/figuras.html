@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geométricas-JavaScript</title>
+    <script src="./figuras.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+   <header>
+        <h1 id="titulo">
+           Calculadora de figuras geométricas
+        </h1>
+   </header>
+    
+   <section class="container">
+    
+        <!--AQUI VA EL CODIGO DEL CUADRADO-->
+
+        <div>
+            <h2> Cuadrado</h2>
+            
+            <form>
+                <label for="inputCuadrado">
+                    Lados de tu cuadrado:
+                </label>
+                <br><br>
+
+                <input id="inputCuadrado" type="number"/>
+                
+                <select id="longitudCuadrado">
+                    <option value="cm">cm</option>
+                    <option value="m">m</option>
+                    <option value="km">km</option>
+                </select>
+
+                <br>
+                <br>
+
+                <button type="button" onclick="calcularPerimetroCuadrado()"> <!--onclick relaciona con js mediante la funcion que se llama aqui-->
+                    Calcular el perímetro
+                </button>
+
+                <button type="button" onclick="calcularAreaCuadrado()">
+                    Calcular el área 
+                </button>
+
+            </form>
+        </div>
+        <br>
+
+      <!--AQUI VA EL CODIGO DEL TRIANGULO-->
+
+        <div>
+            <h2>Triángulo</h2>  
+            <form>
+                <label for="inputTriangulo1">Lado 1 de tu triángulo:</label><br><br>
+                <input type="number" id="inputTriangulo1">
+            </form>
+
+            <br>
+
+            <form>
+                <label for="inputTriangulo2">Lado 2 de tu triángulo:</label><br><br>
+                <input type="number" id="inputTriangulo2">
+            </form>
+
+            <br>
+
+            <form>
+                <label for="inputTriangulo3">Base de tu triángulo:</label><br><br>
+                <input type="number" id="inputTriangulo3">
+            </form>
+
+            <br>
+
+            <form>
+                <label for="inputAltura">Altura de tu triángulo:</label><br><br>
+                <input type="number" id="inputAltura">
+            </form>
+
+            <br>
+
+           <button type="button" onclick="calcularPerimetroTriangulo()">
+             Calcular el perímetro
+           </button>
+
+           <button type="button" onclick="calcularAreaTriangulo()">
+             Calcular el área
+           </button>
+
+        </div>
+        <br>
+
+      <!--AQUI VA EL CODIGO DEL CIRCULO-->
+      
+      <div>
+
+            <h2>Circulo</h2>
+           
+
+            <form>
+                <label for="inputRadio">Radio de tu circulo:</label><br><br>
+                <input type="number" id="inputRadio">
+                
+                <select id="longitudCirculo">
+                    <option value="cm">cm</option>
+                    <option value="m">m</option>
+                    <option value="km">km</option>
+                </select>
+            </form>
+
+            <br>
+
+            <button type="button" onclick="calcularPerimetroCirculo()">
+                Calcular el perímetro
+            </button>
+            <button type="button" onclick="calcularAreaCirculo()">
+                Calcular el área
+            </button>
+
+      </div>
+
+      <div>
+            <h2>Triángulo isósceles</h2>
+        
+            <form>
+                <label for="inputLado1">Lado 1 de tu isósceles</label>
+                <input type="number" id="inputLado1">
+            </form>
+            <br>
+        
+            <form>
+                <label for="inputLado2">Lado 2 de tu isósceles</label>
+                <input type="number" id="inputLado2">
+            </form>
+            <br>
+        
+            <form>
+                <label for="inputLadoBase">Lado Base de tu isósceles</label>
+                <input type="number" id="inputLadoBase">
+            </form>
+            <br>
+
+            <button type="button" onclick="calcularAltura()">Calcular la altura</button>
+        </div>
+
+    </section>
+    <br><br>
+
+</body>
+</html>
